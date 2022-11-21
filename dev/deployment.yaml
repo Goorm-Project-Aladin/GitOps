@@ -6,7 +6,7 @@ metadata:
   labels:
     env: dev
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: aladin-web
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: aladin
-        image: 535954374321.dkr.ecr.ap-northeast-2.amazonaws.com/aladin:f274525c
+        image: 535954374321.dkr.ecr.ap-northeast-2.amazonaws.com/aladin:84920182
         ports:
         - containerPort: 80
