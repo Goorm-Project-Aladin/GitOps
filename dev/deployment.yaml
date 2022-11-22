@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: aladin
-        image: 535954374321.dkr.ecr.ap-northeast-2.amazonaws.com/aladin:d7aed0f6
+        image: 535954374321.dkr.ecr.ap-northeast-2.amazonaws.com/aladin:latest
         ports:
         - containerPort: 80
         resources:
