@@ -19,7 +19,7 @@ spec:
       - name: aladin
         image: 535954374321.dkr.ecr.ap-northeast-2.amazonaws.com/aladin:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         resources:
           requests:
             cpu: "200m"
