@@ -4,17 +4,18 @@ metadata:
   name: aladin-web-hpa
   namespace: default
 spec:
+  minReplicas: 3
+  maxReplicas: 100
+
   # Scale할 Deployment 설정
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
     name: aladin-web-deployment
-  minReplicas: 3
-  maxReplicas: 100
 
   # Scale할 조건
   metrics:
   - resource:
-      name: cpu
-      targetAverageUrilization: 5
+      name: cpu	# HPA를 구성할 리소스(CPU, MEM)
+      targetAverageUrilization: 30	# CPU 사용률이 30% 이상일 경우 생성
     type: Resource
