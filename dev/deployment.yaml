@@ -20,8 +20,3 @@ spec:
         image: 535954374321.dkr.ecr.ap-northeast-2.amazonaws.com/aladin:84920182
         ports:
         - containerPort: 80
-        resources:
-            requests:
-              cpu: 250m
-            limits:
-              cpu: 500m
